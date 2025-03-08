@@ -1,0 +1,12 @@
+node_modules
+node_modules/*
+package-lock.json
+*.lock
+.vscode/*
+.env
+yarn.lock
+*.log
+.aws
+script
+pnpm-lock.yaml
+.prettierrc.json
