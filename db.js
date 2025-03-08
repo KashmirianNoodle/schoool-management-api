@@ -1,8 +1,9 @@
+require("dotenv").config();
 const mysql = require("mysql2/promise");
 
 // Test database connection
 const db = mysql.createPool({
-  uri: "mysql://avnadmin:AVNS_7VQ7islu0-EHIayDYpj@mysql-20cb0e6a-xackfaizu-d501.e.aivencloud.com:27780/school_management?ssl-mode=REQUIRED",
+  uri: process.env.DB_URI,
 });
 
 db.getConnection()
