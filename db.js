@@ -16,7 +16,7 @@ async function initializeDatabase() {
     //   await db.query("CREATE DATABASE IF NOT EXISTS school_management");
 
     // Switch to the database
-    await db.query("USE school_management");
+    await db.query("USE defaultdb");
 
     // Create the schools table if it doesn't exist
     await db.query(`
